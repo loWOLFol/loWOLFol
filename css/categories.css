@@ -1,0 +1,83 @@
+.navMenu {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-flow: row wrap;
+	background: #6d412d;
+}
+
+.navMenu a {
+	color: #f1f0ed;
+	font-size: 20px;
+	margin: 15px 5px;
+	padding-bottom: 2px;
+}
+
+.navMenu a:hover {
+	border-bottom: 1px solid #f1f0ed;
+	animation: navMenu 3s infinite;
+}
+
+.allTanks {
+}
+.category {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 2px solid #242427;
+	padding: 20px 0;
+	background: #f1f0ed;
+}
+
+.tank {
+	margin-top: 20px;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #2424278c;
+}
+
+.tank img {
+	margin-right: 15px;
+	width: 320px;
+	height: 220px;
+}
+
+.tank div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+	color: #f1f0ed;
+}
+
+.tank h2 {
+	margin-bottom: 10px;
+}
+
+@keyframes navMenu {
+	0% {
+		color: #a3966f;
+		border-bottom: 1px solid #a3966f;
+	}
+
+	20%,
+	60%,
+	100% {
+		color: #f1f0ed;
+		border-bottom: 1px solid #f1f0ed;
+	}
+
+	40% {
+		color: #836a4c;
+		border-bottom: 1px solid #836a4c;
+	}
+
+	80% {
+		color: #242427;
+		border-bottom: 1px solid #242427;
+	}
+}

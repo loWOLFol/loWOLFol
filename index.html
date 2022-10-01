@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<div class="nav">
+					<div class="logo">
+						<a href="index.html">Logo</a>
+					</div>
+					<div class="menu">
+						<a href="index.html">Главная</a>
+						<a href="categories.html">Категории</a>
+						<a href="games.html">Игры</a>
+					</div>
+				</div>
+			</header>
+			<main>
+				<div class="info">
+					<div class="block infoBlock">
+						<h2>Немного о сайте:</h2>
+						<ul>
+							<li>На этом сайте вы сможете немного окунуться в мир танков</li>
+							<li>
+								Если вы ничего не знали о танках или знали но совсем чуть-чуть,
+								то вы сможете узнать много итрересного
+							</li>
+							<li>Вы узнаете какими были самые первые танки</li>
+						</ul>
+					</div>
+
+					<div class="block">
+						<h2>Немного фотографий:</h2>
+						<div class="tanks">
+							<img src="images/kv-2.jpg" alt="" />
+							<img src="images/ferdinand.jpg" alt="" />
+							<img src="images/t-34-85.jpg" alt="" />
+							<img src="images/fv4005.jpg" alt="" />
+							<img src="images/is-7.jpg" alt="" />
+							<img src="images/mark 1.jpg" alt="" />
+						</div>
+					</div>
+
+					<div class="block form">
+						<form
+							action="https://echo.htmlacademy.ru/"
+							id="form"
+							class="form_body"
+						>
+							<h2 class="form_title">Оставьте свой коментарий</h2>
+							<div class="form_item">
+								<label for="formName" class="form_label">Имя*:</label>
+								<input
+									id="formName"
+									type="text"
+									name="name"
+									placeholder="Имя"
+									class="form_input _req"
+								/>
+							</div>
+
+							<div class="form_item">
+								<label for="formEmail" class="form_label">E-mail*:</label>
+								<input
+									id="formEmail"
+									type="text"
+									name="email"
+									placeholder="Почта"
+									class="form_input _req _email"
+								/>
+							</div>
+
+							<div class="form_item">
+								<label for="formMessage" class="form_label">Сообщение:</label>
+								<textarea
+									name="message"
+									id="formMessage"
+									class="form_input"
+									placeholder="Сообщение..."
+								></textarea>
+							</div>
+
+							<div class="form_item">
+								<div class="checkbox">
+									<input
+										type="checkbox"
+										name="agreement"
+										id="formAgreement"
+										class="checkbox_input _req"
+										checked
+									/>
+									<label for="formAgreement" class="checkbox_label"
+										><span
+											>Я даю свое согласие на обработку персональных данных в
+											соответствии с <a href="">Условиями</a>*</span
+										></label
+									>
+								</div>
+							</div>
+
+							<button type="submit" class="form_button btn">Отправить</button>
+						</form>
+					</div>
+				</div>
+			</main>
+			<footer>
+				<nav>
+					<a href="index.html">Главная</a>
+					<a href="categories.html">Категории</a>
+					<a href="games.html">Игры</a>
+				</nav>
+			</footer>
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>
