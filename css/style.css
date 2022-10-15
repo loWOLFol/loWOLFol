@@ -89,20 +89,19 @@ main {
 
 .tanks {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
 	align-items: center;
-	flex-direction: column;
 }
 
 .tanks img {
-	width: 300px;
-	height: 180px;
-	padding-top: 15px;
-	transition: transform 1s ease 0s;
+	width: 700px;
+	height: 500px;
 }
 
-.tanks img:hover {
-	transform: scale(2);
+.bx-wrapper {
+    width: 700px;
+	height: 500px;
+	margin-top: 20px;
 }
 
 /* Форма */
@@ -260,4 +259,45 @@ nav a {
 
 nav a:hover {
 	border-bottom: 1px solid #f1f0ed;
+}
+
+.up {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: #108bdda9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	position: fixed;
+	right: 15px;
+	bottom: 15px;
+	
+}
+
+.material-symbols-outlined {
+  color: #fff;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 0,
+  'opsz' 48
+  
+}
+
+@media (max-width: 730px) {
+	.tanks img,
+	.bx-wrapper {
+		width: 500px;
+		height: 300px;
+	}
+}
+
+@media (max-width: 530px) {
+	.tanks img,
+	.bx-wrapper {
+		width: 300px;
+		height: 200px;
+	}
 }

@@ -6,9 +6,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/categories.css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 		<title>Document</title>
 	</head>
-	<body>
+	<body id="top">
 		<div class="wrapper">
 			<header>
 				<div class="nav">
@@ -24,11 +26,19 @@
 			</header>
 			<main>
 				<div class="navMenu">
-					<a href="#tt">Тяжелые</a>
-					<a href="#st">Средние</a>
-					<a href="#lt">Легкие</a>
-					<a href="#ptsay">ПТ-Сау</a>
-					<a href="#say">Сау</a>
+					<a href="#tt" class="scroll">Тяжелые</a>
+					<a href="#st" class="scroll">Средние</a>
+					<a href="#lt" class="scroll">Легкие</a>
+					<a href="#ptsay" class="scroll">ПТ-Сау</a>
+					<a href="#say" class="scroll">Сау</a>
+				</div>
+
+				<div class="up">
+					<a href="#top" class="scroll">
+						<span class="material-symbols-outlined">
+							arrow_upward
+						</span>
+					</a>
 				</div>
 
 				<div class="allTanks">
@@ -37,7 +47,7 @@
 						<h2>Тяжелые танки</h2>
 						<div class="tank">
 							<img src="images/is-7.jpg" alt="" />
-							<div>
+							<div class="info">
 								<h2>ИС-7</h2>
 								<p>
 									Опытный советский тяжёлый танк. разработан в 1945—1947 годах,
@@ -52,7 +62,7 @@
 						</div>
 						<div class="tank">
 							<img src="images/is-3.jpg" alt="" />
-							<div>
+							<div class="info">
 								<h2>ИС-3</h2>
 								<p>
 									Cоветский тяжёлый танк разработки периода Великой
@@ -65,7 +75,7 @@
 						</div>
 						<div class="tank">
 							<img src="images/kv-2.jpg" alt="" />
-							<div>
+							<div class="info">
 								<h2>КВ-2</h2>
 								<p>
 									Cоветский тяжёлый штурмовой танк начального периода Великой
@@ -85,7 +95,7 @@
 						<h2>Средние танки</h2>
 						<div class="tank">
 							<img src="images/t-54.jpg" alt="" />
-							<div>
+							<div class="info">
 								<h2>Т-54</h2>
 								<p>
 									Советский средний танк. Принят на вооружение Советской Армии
@@ -98,7 +108,7 @@
 						</div>
 						<div class="tank">
 							<img src="images/t-34-85.jpg" alt="" />
-							<div>
+							<div class="info">
 								<h2>Т-34-85</h2>
 								<p>
 									войсковое обозначение последней массовой модификации
@@ -112,7 +122,7 @@
 						</div>
 						<div class="tank">
 							<img src="" alt="" />
-							<div>
+							<div class="info">
 								<h2></h2>
 								<p></p>
 							</div>
@@ -124,21 +134,21 @@
 						<h2>Легкие танки</h2>
 						<div class="tank">
 							<img src="" alt="" />
-							<div>
+							<div class="info">
 								<h2></h2>
 								<p></p>
 							</div>
 						</div>
 						<div class="tank">
 							<img src="" alt="" />
-							<div>
+							<div class="info">
 								<h2></h2>
 								<p></p>
 							</div>
 						</div>
 						<div class="tank">
 							<img src="" alt="" />
-							<div>
+							<div class="info">
 								<h2></h2>
 								<p></p>
 							</div>
@@ -150,7 +160,7 @@
 						<h2>ПТ-САУ</h2>
 						<div class="tank">
 							<img src="images/ferdinand.jpg" alt="" />
-							<div>
+							<div class="info">
 								<h2>Ferdinand</h2>
 								<p>
 									немецкая тяжёлая самоходно-артиллерийская установка периода
@@ -165,7 +175,7 @@
 						</div>
 						<div class="tank">
 							<img src="images/fv4005.jpg" alt="" />
-							<div>
+							<div class="info">
 								<h2>FV4005</h2>
 								<p>
 									британский истребитель танков, разработанный на базе Centurion
@@ -179,7 +189,7 @@
 						</div>
 						<div class="tank">
 							<img src="images/hetzer.jpg" alt="" />
-							<div>
+							<div class="info">
 								<h2>Hetzer</h2>
 								<p></p>
 							</div>
@@ -191,21 +201,21 @@
 						<h2>САУ</h2>
 						<div class="tank">
 							<img src="images/sy-14.jpg" alt="" />
-							<div>
+							<div class="info">
 								<h2>СУ-14</h2>
 								<p></p>
 							</div>
 						</div>
 						<div class="tank">
 							<img src="" alt="" />
-							<div>
+							<div class="info">
 								<h2></h2>
 								<p></p>
 							</div>
 						</div>
 						<div class="tank">
 							<img src="" alt="" />
-							<div>
+							<div class="info">
 								<h2></h2>
 								<p></p>
 							</div>
@@ -216,8 +226,9 @@
 			</main>
 			<footer>
 				<nav>
-					<a href="">Главная</a>
-					<a href="">Категории</a>
+					<a href="index.html">Главная</a>
+					<a href="categories.html">Категории</a>
+					<a href="games.html">Игры</a>
 				</nav>
 			</footer>
 		</div>

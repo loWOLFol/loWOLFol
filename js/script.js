@@ -1,3 +1,17 @@
+// ПРОКРУТКА
+let links = document.querySelectorAll('.scroll');
+let targetID; //переменная, в которую запишем id целевого элемента
+links.forEach(function (element) {
+    element.addEventListener('click', function (event) {
+        event.preventDefault(); //отключить стандартное поведение
+        targetID = element.getAttribute('href'); //получить id целевого элемента из атрибута href ссылки
+        document.querySelector(targetID).scrollIntoView({ //метод для управления прокруткой
+            behavior: 'smooth', //анимация прокрутки auto - резко, smooth - плавно
+            block: 'start' //вертикальное выравнивание
+        })
+    })
+})
+
 document.addEventListener('DOMContentLoaded', function () {
   const form = document.getElementById('form');
   form.addEventListener('submit', formSend);
@@ -68,3 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
+// КАРУСЕЛЬ
+$(document).ready(function () {
+  $('.slider').bxSlider();
+});

@@ -6,6 +6,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="yandex-verification" content="4ef75e5de917db18" />
 		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 		<title>Document</title>
 		<!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
@@ -24,7 +27,7 @@
 <noscript><div><img src="https://mc.yandex.ru/watch/90619617" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 	</head>
-	<body>
+	<body id="top">
 		<div class="wrapper">
 			<header>
 				<div class="nav">
@@ -36,6 +39,14 @@
 						<a href="categories.html">Категории</a>
 						<a href="games.html">Игры</a>
 					</div>
+				</div>
+
+				<div class="up">
+					<a href="#top" class="scroll">
+						<span class="material-symbols-outlined">
+							arrow_upward
+						</span>
+					</a>
 				</div>
 			</header>
 			<main>
@@ -55,14 +66,18 @@
 					<div class="block">
 						<h2>Немного фотографий:</h2>
 						<div class="tanks">
-							<img src="images/kv-2.jpg" alt="" />
-							<img src="images/ferdinand.jpg" alt="" />
-							<img src="images/t-34-85.jpg" alt="" />
-							<img src="images/fv4005.jpg" alt="" />
-							<img src="images/is-7.jpg" alt="" />
-							<img src="images/mark 1.jpg" alt="" />
+							<div class="slider">
+								<img src="images/kv-2.jpg" alt="" />
+								<img src="images/ferdinand.jpg" alt="" />
+								<img src="images/t-34-85.jpg" alt="" />
+								<img src="images/fv4005.jpg" alt="" />
+								<img src="images/is-7.jpg" alt="" />
+								<img src="images/mark 1.jpg" alt="" />
+							</div>					
 						</div>
 					</div>
+
+					
 
 					<div class="block form">
 						<form
@@ -134,6 +149,8 @@
 				</nav>
 			</footer>
 		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 		<script src="js/script.js"></script>
 	</body>
 </html>
