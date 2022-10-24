@@ -70,7 +70,7 @@ main {
 	width: 100%;
 	font-size: 20px;
 	padding: 30px 0;
-	background: #f1f0ed;
+	background: #cacac9;
 	color: #242427;
 	border-bottom: 2px solid #242427;
 }
@@ -89,8 +89,9 @@ main {
 
 .tanks {
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 	align-items: center;
+	flex-direction: column;
 }
 
 .tanks img {
@@ -99,7 +100,7 @@ main {
 }
 
 .bx-wrapper {
-    width: 700px;
+  width: 700px;
 	height: 500px;
 	margin-top: 20px;
 }
@@ -264,26 +265,31 @@ nav a:hover {
 .up {
 	width: 40px;
 	height: 40px;
-	border-radius: 50%;
-	background: #108bdda9;
+	background: #16b1e0d3;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 20px;
+	border-radius: 50%;
 	position: fixed;
-	right: 15px;
-	bottom: 15px;
-	
+	bottom: 10px;
+	right: 10px;
+}
+
+.up:hover {
+	background: #14a2cee5;
+	box-shadow: 0 0 15px #16b1e0d3;
 }
 
 .material-symbols-outlined {
-  color: #fff;
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 700,
-  'GRAD' 0,
-  'opsz' 48
-  
+	font-variation-settings: 'FILL' 0, 'wght' 900, 'GRAD' 0, 'opsz' 48;
+	color: #fff;
+}
+
+@media (max-width: 475px) {
+	.menu {
+		display: flex;
+		flex-direction: column;
+	}
 }
 
 @media (max-width: 730px) {
